@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Clothing</h1>
+    <ul>
+    {% for clothing in recommendations %}
+        <li>{{ clothing.name }} ({{ clothing.measurements }})</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

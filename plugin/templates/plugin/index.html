@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Size Recommendation</title>
+</head>
+<body>
+    <h1>Size Recommendation</h1>
+    <form action="image_upload" method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+        
+        <label for="front-image">Front Image:</label>
+        <input type="file" id="front-image" name="front-image"><br>
+        <label for="side-image">Side Image:</label>
+        <input type="file" id="side-image" name="side-image"><br>
+          
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
